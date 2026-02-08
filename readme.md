@@ -10,7 +10,7 @@ They take a ticket, and wait in the line.
 
 A receptionist needs to log in to the system through `http://localhost:8000/receptionist`.
 
-From here they can see the number of the patients waiting in line, they simply refer to the ticket number and nothing else, no patient name, or other details.
+Once logged in they can see the number of the patients waiting in line, they simply refer to the ticket number and nothing else, no patient name, or other details.
 
 This project was part of an assignment from [Noroff backend second year](https://github.com/noroff-backend-2) and here is extended with some extra features.
 
