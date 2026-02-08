@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/receptionists/style.css" />
+  </head>
+  <body style="background-color: rgb(231, 231, 231)">
+    <div class="root">
+      <div id="main">
+        <div class="header">
+          <button onclick="window.location = '/logout'">Logout</button>
+        </div>
+
+        <div class="content">
+          <h1 id="header">Next Patient in Line to see the Dr.</h1>
+          <div id="number"></div>
+          <button id="call" class="btnDisabled">Call patient</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/receptionists/main.js"></script>
+  </body>
+</html>

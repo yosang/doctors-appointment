@@ -35,18 +35,18 @@ const kcAdmin = new KeycloakAdminClient({
 
     // If not, create one and set a password for it
     if (!users.length) {
-      const user = await kcAdmin.users.create({
+      const receptionist = await kcAdmin.users.create({
         realm: KC_REALM,
         username: KC_TEST_USER,
         enabled: true,
-        email: "john@email.com",
-        firstName: "dr",
-        lastName: "john",
+        email: "julia@email.com",
+        firstName: "julia",
+        lastName: "roberts",
       });
 
       await kcAdmin.users.resetPassword({
         realm: KC_REALM,
-        id: user.id,
+        id: receptionist.id,
         credential: {
           type: "password",
           value: KC_TEST_USER_PW,

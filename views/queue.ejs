@@ -9,7 +9,11 @@
   <body style="background-color: rgb(231, 231, 231)">
     <div class="root">
       <div id="main">
-        <div class="header"></div>
+        <div class="header">
+          <% if(name) { %>
+            <h1>Hello <%= name %></h1>
+          <% } %>
+        </div>
 
         <div class="content">
           <h1 id="header">Please take a number</h1>

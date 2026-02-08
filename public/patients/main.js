@@ -1,6 +1,6 @@
 import { updateDOM, hideDOMElements } from "./utils.js";
 
-const ws = new WebSocket("ws://localhost:8001");
+const ws = new WebSocket("ws://localhost:8001/");
 
 const header = document.getElementById("header");
 const main = document.getElementById("main");

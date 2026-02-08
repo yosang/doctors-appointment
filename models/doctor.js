@@ -1,7 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   const doctor = sequelize.define("Doctor", {
-    username: DataTypes.STRING,
-    password: DataTypes.STRING,
+    name: DataTypes.STRING,
   });
 
   doctor.associate = (db) => {
