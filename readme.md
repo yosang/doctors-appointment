@@ -4,7 +4,7 @@ This application is developed around the idea of a ticket system for **Patients*
 
 A patient should have an appointment number with them, this is usually sent to them in as SMS once they book an appointment with the doctor.
 
-They enter their appointment number in the main page `http://localhost:8000/`, they are taken to the queue system.
+Once they enter their appointment number in the main page `http://localhost:8000/`, they are taken to the queue system.
 
 They take a ticket, and wait in the line.
 
