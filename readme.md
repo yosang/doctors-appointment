@@ -67,9 +67,27 @@ appointmentNumber: 2222
 appointmentNumber: 3243
 ```
 
-# WebSocket Server
+# Screenshots
 
-This is a Node.js WebSocket server running with the [ws](https://npm.im/ws) package.
+## Patients have to enter their appointment number
+
+![alt text](./assets/1.png)
+
+## Patients are asked to take a ticket number, their position in the queue is also shown
+
+![alt text](./assets/2.png)
+
+## Patients wait in line until their number is called, they can see how many patients are ahead
+
+![alt text](./assets/3.png)
+
+## Receptionists see the next patient in the queue once logged in
+
+![alt text](./assets/4.png)
+
+## If there is no patient waiting in line, this is also visualised
+
+![alt text](./assets/5.png)
 
 # Author
 
