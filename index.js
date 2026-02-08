@@ -4,12 +4,25 @@ const app = express();
 const port = process.env.PORT || 3000;
 const db = require("./models");
 
+const session = require("express-session");
+const { keycloak, memoryStore } = require("./middlewares/keycloak.js");
+
+app.use(
+  session({
+    secret: "super_secret",
+    resave: false,
+    saveUninitialized: true,
+    store: memoryStore,
+  }),
+);
+
+app.use(keycloak.middleware());
 app.use(express.json());
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 const patientsRouter = require("./routes/patients.js");
-const auth = require("./routes/patients.js");
+const auth = require("./routes/auth.js");
 
 app.use("/patients", patientsRouter);
 app.use("/auth", auth);

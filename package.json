@@ -1,8 +1,11 @@
 {
   "dependencies": {
+    "@keycloak/keycloak-admin-client": "^26.5.2",
     "dotenv": "^17.2.4",
     "ejs": "^4.0.1",
     "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "keycloak-connect": "^26.1.1",
     "sequelize": "^6.37.7",
     "sqlite3": "^5.1.7"
   },
