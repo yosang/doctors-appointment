@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 50px;
+  box-sizing: border-box;
+  font:
+    14px "Lucida Grande",
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header,
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main {
+  color: rgb(0, 0, 0);
+  border: 1px solid darkcyan;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.title {
+  color: darkcyan;
+  padding: 10px 0px;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#takeNumber {
+  padding: 10px;
+  margin: 10px;
+  font-size: 30px;
+  background-color: darkcyan;
+  color: rgb(255, 255, 255);
+  transition: transform 0.1s;
+}
+
+#takeNumber:hover {
+  cursor: pointer;
+  transform: translateY(4%) translateX(1%);
+}
+
+#lineNumber {
+  color: darkcyan;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}

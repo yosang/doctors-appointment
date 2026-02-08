@@ -1,7 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 const db = require("./models");
 
 const session = require("express-session");
@@ -24,7 +24,7 @@ app.set("view engine", "ejs");
 const patientsRouter = require("./routes/patients.js");
 const auth = require("./routes/auth.js");
 
-app.use("/patients", patientsRouter);
+app.use("/", patientsRouter);
 app.use("/auth", auth);
 
 db.sequelize

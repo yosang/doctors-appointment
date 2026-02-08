@@ -3,10 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/patients/style.css" />
     <title>Patients</title>
   </head>
-  <body>
-    <h1>Hello from patients</h1>
-    <script src="./patients.js"></script>
+  <body style="background-color: rgb(231, 231, 231)">
+    <div class="root">
+      <div id="main">
+        <div class="header"></div>
+
+        <div class="content">
+          <h1 id="header">Please take a number</h1>
+          <div id="line"></div>
+          <button id="takeNumber">Take this number</button>
+          <h1>Your number</h1>
+          <div id="lineNumber"></div>
+          <div id="footer"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./patients/main.js" type="module"></script>
   </body>
 </html>
