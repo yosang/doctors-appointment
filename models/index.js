@@ -2,11 +2,9 @@ const { Sequelize, DataTypes } = require("sequelize");
 const fs = require("fs");
 const db = {};
 
-if (!fs.existsSync("./data")) fs.mkdirSync("/data");
-
 const sequelize = new Sequelize({
   dialect: "sqlite",
-  storage: "./data/database.sqlite",
+  storage: "./database.sqlite",
   logging: false,
 });
 
