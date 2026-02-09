@@ -22,18 +22,20 @@ Here I delved deeper into using [Keycloack](https://www.keycloak.org/) for auth 
 
 - Node 22.x.x
 - NPM version 10.x.x
+-
 
 # Configuration
 
 1. Clone the project with `git clone https://github.com/yosang/doctors-appointment`
 2. While on the root folder, do `npm install` to install all dependencies needed for this project.
-3. Add `.env` file to each individual service.
+3. Add `.env` file and configure it from `.env.example`.
 
 # Usage
 
-1. `npm run start` - Starts the application.
-2. Visit the patients page at http://localhost:8000/
-3. Visit the receptionist page at http://localhost:8000/receptionist
+1. Keycloak must be configured before use, a docker image is used in this example, see [Keycloak Docker guide](https://www.keycloak.org/getting-started/getting-started-docker) for details.
+2. `npm run start` - Starts the application.
+3. Visit the patients page at http://localhost:8000/
+4. Visit the receptionist page at http://localhost:8000/receptionist
 
 # Environment Variables
 
